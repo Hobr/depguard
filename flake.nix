@@ -41,7 +41,10 @@
             pkg-config
             openssl
             rustToolchain
+            cargo-binstall
             pre-commit
+            just
+            just-lsp
           ];
 
           env = {

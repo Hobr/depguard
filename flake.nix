@@ -53,8 +53,13 @@
           };
 
           shellHook = ''
-            export CARGO_HOME="$PWD/.cargo"
-            export PATH="$CARGO_HOME/bin:$PWD/target/release:$PATH"
+            if [ -n "$FISH_VERSION" ]; then
+              set -gx CARGO_HOME "$PWD/.cargo"
+              set -gx PATH "$CARGO_HOME/bin" "$PWD/target/release" $PATH
+            else
+              export CARGO_HOME="$PWD/.cargo"
+              export PATH="$CARGO_HOME/bin:$PWD/target/release:$PATH"
+            fi
           '';
         };
     };

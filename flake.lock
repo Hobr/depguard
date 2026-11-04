@@ -78,11 +78,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1785907205,
-        "narHash": "sha256-Ds1vTi53af4wDMAveSR/K0JnywDslLwmgwhVIiwnNmY=",
+        "lastModified": 1793523538,
+        "narHash": "sha256-vHPjEGxtV+StSLW9DJpa3c3gt0UD0s1q4nC98AZ0N0c=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "c5cb13481d718fac906aa9cfd85f9b60e1a546cb",
+        "rev": "c85ccd343087c57da6021cafa1647142ad03e32e",
         "type": "github"
       },
       "original": {
